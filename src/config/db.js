@@ -12,6 +12,7 @@ const pool = new Pool({
   },
   connectionTimeoutMillis: 5000,
   idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 10000, // 10 segundos de espera
 });
 
 pool.connect((err) => {
