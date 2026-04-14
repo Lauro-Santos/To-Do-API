@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://to-do-api-0sl9.onrender.com";
 let token = "";
 
 function alternarTelas() {
