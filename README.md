@@ -120,3 +120,7 @@ Durante o desenvolvimento deste projeto, foquei em resolver problemas reais de i
 ##### ⚠️ Nota sobre a Hospedagem: Como o back-end utiliza o plano gratuito do Render, o servidor pode entrar em modo de espera após 15 minutos de inatividade. O primeiro carregamento após esse período pode levar cerca de 30 a 50 segundos para que o serviço seja reiniciado automaticamente.
 
 Feito com ❤️ por Lauro Santos
+
+## ⚖️ Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Lauro-Santos/To-Do-API/blob/main/LICENSE) para mais detalhes.
