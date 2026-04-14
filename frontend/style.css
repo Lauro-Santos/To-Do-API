@@ -1,0 +1,106 @@
+/* style.css */
+:root {
+  --primary-color: #4a90e2;
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box; /* Garante que o padding não estoure a largura */
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#mensagem {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #27ae60;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+#area-tarefas {
+  text-align: left;
+}
+
+#lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+#lista-tarefas li {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista-tarefas li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Tarefas - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="tela-auth">
+        <div id="secao-login">
+            <h1>Login</h1>
+            <input type="email" id="login-email" placeholder="E-mail">
+            <input type="password" id="login-senha" placeholder="Senha">
+            <button onclick="fazerLogin()">Entrar</button>
+            <p>Não tem conta? <a href="#" onclick="alternarTelas()">Cadastre-se</a></p>
+        </div>
+
+        <div id="secao-cadastro" style="display: none;">
+            <h1>Criar Conta</h1>
+            <input type="text" id="cad-nome" placeholder="Nome Completo">
+            <input type="email" id="cad-email" placeholder="E-mail">
+            <input type="password" id="cad-senha" placeholder="Senha">
+            <button onclick="registrarUsuario()">Registrar</button>
+            <p>Já tem conta? <a href="#" onclick="alternarTelas()">Faça Login</a></p>
+        </div>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <hr>
+
+    <div id="area-tarefas" style="display: none;">
+        <button onclick="logout()" style="background-color: #95a5a6; margin-top: 10px;">Sair</button>
+        <h2>Minhas Tarefas</h2>
+        <input type="text" id="nova-tarefa" placeholder="Nova tarefa...">
+        <button onclick="criarTarefa()">Adicionar</button>
+        <ul id="lista-tarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
