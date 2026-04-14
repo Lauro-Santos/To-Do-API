@@ -13,14 +13,10 @@ app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
 
-const produtosRoutes = require("./src/routes/produtosRoutes"); // Importa as rotas
 const usuariosRoutes = require("./src/routes/usuariosRoutes"); // Importa as rotas
 const tarefasRoutes = require("./src/routes/tarefasRoutes"); // Importa as rotas
 
 app.use(express.json());
-
-// Rota produtos
-app.use("/produtos", produtosRoutes);
 
 // Rota usuarios
 app.use("/usuarios", usuariosRoutes);
